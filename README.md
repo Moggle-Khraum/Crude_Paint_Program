@@ -1,6 +1,9 @@
 # Crude Paint Program in Godot Engine
+
 **This is the source code of the crude painting program made in Godot Engine**
+
 *This application can do the basic function of a Painting program*
+
 The following are its functions:
 - [x] Change brush color
 - [x] Change brush size
