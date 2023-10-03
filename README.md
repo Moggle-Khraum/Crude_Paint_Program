@@ -4,12 +4,16 @@
 
 *This application can do the basic function of a Painting program*
 
+
 The following are its functions:
 - [x] Change brush color
 - [x] Change brush size
 - [x] Change brush smoothness (does not always works)
 - [x] Adds an Eraser
 - [x] Save the File into the computer's Picture folder
+
+Notes 📝:
+The program is in Filipino language, and is not in English language, I will fix it and make English as the default language.
 
 
 You can download the Windows Application EXE [:package:here](https://download1479.mediafire.com/wpc6ibf96y7gySscwys1d7NCwuXmMU5q_3j18Zm-XbtdCbMcmsv5E67B_7pUPQLJE9T7i_PAQrbZ4ATJxPxpOr2c6QJFQ4THLlRBRVGmQmykVO0XC9IqzxznpiXta5BlIdDxRLXd7bQwto2_mRshx1H2qA3bFMIUU5eliPgKEYwp6Q/9m1ylqas9twh711/Paint.exe)
