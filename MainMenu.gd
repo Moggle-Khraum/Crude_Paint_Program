@@ -8,3 +8,12 @@ func _on_paintButton_pressed() -> void:
 func _on_exitButton_pressed() -> void:
 	get_tree().quit()
 	print("Program Exits")
+
+
+func _on_RichTextLabel_meta_clicked(meta) -> void:
+	var err = OS.shell_open(meta)
+	if err == OK:
+		print("Opened link '%s' successfully!" % meta)
+	else:
+		print("Failed opening the link '%s'!" % meta)
+	

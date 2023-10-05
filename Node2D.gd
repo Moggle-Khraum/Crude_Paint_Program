@@ -85,6 +85,7 @@ func _on_colorButton_pressed() -> void:
 		$'%disableEraser'.show()
 		print("Disabled Eraser")
 		$'%disableText'.show()
+		$'%disableSaved'.show()
 		
 func closePalette() -> void:
 	$'%PanelContainer'.hide()
@@ -96,6 +97,7 @@ func closePalette() -> void:
 	$'%disableEraser'.hide()
 	print("Enabled Eraser")
 	$'%disableText'.hide()
+	$'%disableSaved'.hide()
 	
 ##########################################
 #For the Button Resizer
@@ -111,6 +113,7 @@ func _on_penButton_pressed() -> void:
 		$'%disableEraser'.show()
 		print("Disabled Eraser")
 		$'%disableText'.show()
+		$'%disableSaved'.show()
 
 func _on_exit_pressed() -> void:
 	$'%BrushSize'.hide()
@@ -121,6 +124,7 @@ func _on_exit_pressed() -> void:
 	$'%disableEraser'.hide()
 	print("Enabled Eraser")
 	$'%disableText'.hide()
+	$'%disableSaved'.hide()
 
 ###################################################
 # For the Writing the Text
@@ -134,6 +138,7 @@ func _on_textButton_pressed() -> void:
 		print("Disabled Brush")
 		$'%disableEraser'.show()
 		print("Disabled Eraser")
+		$'%disableSaved'.show()
 
 func _on_exitText_pressed() -> void:
 	$'%TextPanel'.hide()
@@ -144,12 +149,22 @@ func _on_exitText_pressed() -> void:
 	print("Enabled Brush")
 	$'%disableEraser'.hide()
 	print("Enabled Eraser")
-	
+	$'%disableSaved'.hide()
 	
 ####################################################
 func _on_Tools_pressed() -> void:
-	$'%Tools'.hide()
+	$'%toolBlock'.hide()
 	$'%CanvasLayer'.show()
+	$'%exitBlock'.hide()
+	
+###############################
+func _on_exitBlock_pressed() -> void:
+	$'%toolBlock'.show()
+	$'%CanvasLayer'.hide()
+	$'%exitBlock'.show()
+	
+func _on_exitButton_pressed() -> void:
+	get_tree().quit()
 	
 #########################################################
 # COLOR BUTTONS
@@ -402,6 +417,15 @@ func _on_bitterLime_pressed() -> void:
 	closePalette()
 	print("Close Palette")
 	
+func _on_boysenBerry_pressed() -> void:
+	brush_color = Color("873260")
+	brush_thickness = $'%brush'.value
+	brush_tip.modulate = Color(brush_color)
+	print("Boysen Berry Time")
+	closePalette()
+	print("Close Palette")
+
+
 func _on_deepSaffron_pressed() -> void:
 	brush_color = Color("FF9933")
 	brush_thickness = $'%brush'.value
@@ -435,9 +459,3 @@ func _on_sage_pressed() -> void:
 	print("Close Palette")
 
 
-
-###############################
-func _on_exitBlock_pressed() -> void:
-	$'%Tools'.show()
-	$'%CanvasLayer'.hide()
-	

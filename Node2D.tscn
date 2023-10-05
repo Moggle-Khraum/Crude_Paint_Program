@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://colors/brushIndigo.png" type="Texture" id=2]
@@ -47,6 +47,8 @@
 [ext_resource path="res://colors/brushMalachite.png" type="Texture" id=45]
 [ext_resource path="res://colors/brushHeliotrope.png" type="Texture" id=46]
 [ext_resource path="res://text.png" type="Texture" id=47]
+[ext_resource path="res://cog.png" type="Texture" id=48]
+[ext_resource path="res://exit.png" type="Texture" id=49]
 
 [sub_resource type="StyleBoxFlat" id=1]
 resource_local_to_scene = true
@@ -151,14 +153,6 @@ outline_color = Color( 0.294118, 0.294118, 0.294118, 1 )
 use_mipmaps = true
 use_filter = true
 extra_spacing_char = 5
-font_data = ExtResource( 36 )
-
-[sub_resource type="DynamicFont" id=15]
-size = 27
-outline_size = 1
-outline_color = Color( 0, 0, 0, 1 )
-use_mipmaps = true
-use_filter = true
 font_data = ExtResource( 36 )
 
 [node name="Control" type="Control"]
@@ -793,7 +787,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 4
 custom_constants/shadow_offset_y = 2
 custom_fonts/font = SubResource( 3 )
-text = "Nai-save na ang iyung pininta !!"
+text = "The painting has been saved !"
 align = 1
 valign = 1
 autowrap = true
@@ -805,16 +799,36 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="savePopup/Panel"]
-anchor_top = 0.5
+anchor_top = 0.452247
 anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_bottom = 0.738763
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 4
 custom_constants/shadow_offset_y = 2
 custom_fonts/font = SubResource( 4 )
-text = "Paki-check sa iyung
-mga pictures"
+text = "Please checked the
+Device's Pictures Folder"
 align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="deviceused" type="Label" parent="savePopup/Panel"]
+unique_name_in_owner = true
+anchor_left = 0.0273504
+anchor_top = 0.758426
+anchor_right = 0.969231
+anchor_bottom = 0.960673
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 4 )
+text = "Device Used: "
 valign = 1
 autowrap = true
 clip_text = true
@@ -1168,6 +1182,22 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="disableSaved" type="TextureRect" parent="CanvasLayer/savedBlock"]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.105263
+anchor_top = 0.072727
+anchor_right = 0.91228
+anchor_bottom = 0.872724
+mouse_filter = 2
+texture = ExtResource( 29 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="exitBlock" type="Panel" parent="CanvasLayer"]
 anchor_left = 0.0126953
 anchor_top = 0.725
@@ -1176,6 +1206,7 @@ anchor_bottom = 0.816667
 mouse_filter = 2
 custom_styles/panel = SubResource( 1 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
@@ -1186,6 +1217,76 @@ anchor_right = 0.91228
 anchor_bottom = 0.909088
 texture_normal = ExtResource( 29 )
 texture_pressed = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="toolBlock" type="Panel" parent="."]
+unique_name_in_owner = true
+anchor_left = 0.0146484
+anchor_top = 0.465
+anchor_right = 0.0703125
+anchor_bottom = 0.556667
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Tools" type="Button" parent="toolBlock"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="cog" type="TextureRect" parent="toolBlock/Tools"]
+anchor_left = 0.0350877
+anchor_top = 0.0545452
+anchor_right = 0.947368
+anchor_bottom = 0.945451
+texture = ExtResource( 48 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="exitBlock" type="Panel" parent="."]
+unique_name_in_owner = true
+anchor_left = 0.0146484
+anchor_top = 0.583333
+anchor_right = 0.0703125
+anchor_bottom = 0.675
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="exitButton" type="Button" parent="exitBlock"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+flat = true
+expand_icon = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="exit" type="TextureRect" parent="exitBlock/exitButton"]
+anchor_left = 0.0877192
+anchor_top = 0.127273
+anchor_right = 0.877192
+anchor_bottom = 0.890907
+texture = ExtResource( 49 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
@@ -1254,45 +1355,6 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Tools" type="Button" parent="."]
-unique_name_in_owner = true
-anchor_left = 0.00878906
-anchor_top = 0.438333
-anchor_right = 0.106445
-anchor_bottom = 0.6
-flat = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="TextureRect" type="TextureRect" parent="Tools"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-texture = ExtResource( 38 )
-expand = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="tools" type="Label" parent="Tools"]
-anchor_left = 0.04
-anchor_top = 0.340206
-anchor_right = 0.95
-anchor_bottom = 0.721649
-custom_fonts/font = SubResource( 15 )
-text = "Tools"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/blue" to="ViewportContainer/Viewport/Node2D" method="_on_blue_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/green" to="ViewportContainer/Viewport/Node2D" method="_on_green_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/orange" to="ViewportContainer/Viewport/Node2D" method="_on_orange_pressed"]
@@ -1324,7 +1386,7 @@ __meta__ = {
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/bananaYellow" to="ViewportContainer/Viewport/Node2D" method="_on_bananaYellow_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/beaverBrown" to="ViewportContainer/Viewport/Node2D" method="_on_beaverBrown_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/bitterLime" to="ViewportContainer/Viewport/Node2D" method="_on_bitterLime_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/boysenBerry" to="ViewportContainer/Viewport" method="_on_boysenBerry_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/boysenBerry" to="ViewportContainer/Viewport/Node2D" method="_on_boysenBerry_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/deepSaffron" to="ViewportContainer/Viewport/Node2D" method="_on_deepSaffron_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/heliotrope" to="ViewportContainer/Viewport/Node2D" method="_on_heliotrope_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/malachite" to="ViewportContainer/Viewport/Node2D" method="_on_malachite_pressed"]
@@ -1338,5 +1400,6 @@ __meta__ = {
 [connection signal="pressed" from="CanvasLayer/textBlock/textButton" to="ViewportContainer/Viewport/Node2D" method="_on_textButton_pressed"]
 [connection signal="pressed" from="CanvasLayer/savedBlock/saveButton" to="ViewportContainer/Viewport" method="_on_saveButton_pressed"]
 [connection signal="pressed" from="CanvasLayer/exitBlock/exitBlock" to="ViewportContainer/Viewport/Node2D" method="_on_exitBlock_pressed"]
+[connection signal="pressed" from="toolBlock/Tools" to="ViewportContainer/Viewport/Node2D" method="_on_Tools_pressed"]
+[connection signal="pressed" from="exitBlock/exitButton" to="ViewportContainer/Viewport/Node2D" method="_on_exitButton_pressed"]
 [connection signal="pressed" from="TextPanel/exitText" to="ViewportContainer/Viewport/Node2D" method="_on_exitText_pressed"]
-[connection signal="pressed" from="Tools" to="ViewportContainer/Viewport/Node2D" method="_on_Tools_pressed"]
