@@ -22,3 +22,10 @@ func hideNotif():
 	$'%savePopup'.hide()
 	print("Hide Notif Panel")
 
+
+
+
+func _on_boysenBerry_pressed() -> void:
+	pass # Replace with function body.
+	
+

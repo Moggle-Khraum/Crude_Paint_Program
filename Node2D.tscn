@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://colors/brushIndigo.png" type="Texture" id=2]
@@ -38,6 +38,15 @@
 [ext_resource path="res://therok-regular-400.otf" type="DynamicFontData" id=36]
 [ext_resource path="res://pen-tool.png" type="Texture" id=37]
 [ext_resource path="res://IconButton_Small_Blue_Circle.png" type="Texture" id=38]
+[ext_resource path="res://colors/brushBoysenberry.png" type="Texture" id=39]
+[ext_resource path="res://colors/brushBitterLime.png" type="Texture" id=40]
+[ext_resource path="res://colors/brushDeepSaffron.png" type="Texture" id=41]
+[ext_resource path="res://colors/brushBeaverBrown.png" type="Texture" id=42]
+[ext_resource path="res://colors/brushBanana.png" type="Texture" id=43]
+[ext_resource path="res://colors/brushSage.png" type="Texture" id=44]
+[ext_resource path="res://colors/brushMalachite.png" type="Texture" id=45]
+[ext_resource path="res://colors/brushHeliotrope.png" type="Texture" id=46]
+[ext_resource path="res://text.png" type="Texture" id=47]
 
 [sub_resource type="StyleBoxFlat" id=1]
 resource_local_to_scene = true
@@ -52,53 +61,6 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxFlat" id=6]
-border_width_left = 10
-border_width_top = 10
-border_width_right = 10
-border_width_bottom = 10
-border_color = Color( 0.262745, 0.262745, 0.262745, 1 )
-border_blend = true
-corner_radius_top_left = 30
-corner_radius_top_right = 30
-corner_radius_bottom_right = 30
-corner_radius_bottom_left = 30
-
-[sub_resource type="DynamicFont" id=10]
-size = 35
-outline_size = 1
-outline_color = Color( 0, 0, 0, 1 )
-use_filter = true
-font_data = ExtResource( 36 )
-
-[sub_resource type="StyleBoxFlat" id=9]
-resource_local_to_scene = true
-bg_color = Color( 0.6, 0.6, 0.6, 0 )
-border_width_left = 12
-border_width_top = 12
-border_width_right = 12
-border_width_bottom = 12
-border_color = Color( 0.384314, 0.384314, 0.384314, 1 )
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="DynamicFont" id=11]
-size = 53
-outline_size = 1
-outline_color = Color( 0, 0, 0, 1 )
-use_filter = true
-font_data = ExtResource( 36 )
-
-[sub_resource type="DynamicFont" id=12]
-size = 35
-outline_size = 1
-outline_color = Color( 0, 0, 0, 1 )
-use_filter = true
-font_data = ExtResource( 36 )
 
 [sub_resource type="StyleBoxFlat" id=2]
 border_width_left = 3
@@ -126,6 +88,79 @@ outline_color = Color( 0, 0, 0, 1 )
 use_filter = true
 font_data = ExtResource( 36 )
 
+[sub_resource type="StyleBoxFlat" id=6]
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 0.262745, 0.262745, 0.262745, 1 )
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="DynamicFont" id=10]
+size = 30
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 36 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+resource_local_to_scene = true
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color( 0.384314, 0.384314, 0.384314, 1 )
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StreamTexture" id=12]
+flags = 4
+load_path = "res://.import/IconButton_Small_Blue_Circle.png-32e1b87f335e3ee4ba6e19b5641ef6fa.stex"
+
+[sub_resource type="StreamTexture" id=13]
+flags = 4
+load_path = "res://.import/IconButton_Small_Blue_Circle.png-32e1b87f335e3ee4ba6e19b5641ef6fa.stex"
+
+[sub_resource type="StyleBoxFlat" id=14]
+resource_local_to_scene = true
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color( 0.384314, 0.384314, 0.384314, 1 )
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=11]
+size = 36
+outline_size = 3
+outline_color = Color( 0.294118, 0.294118, 0.294118, 1 )
+use_mipmaps = true
+use_filter = true
+extra_spacing_char = 5
+font_data = ExtResource( 36 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 27
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 36 )
+
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -136,6 +171,7 @@ __meta__ = {
 [node name="ViewportContainer" type="ViewportContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+stretch = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
@@ -144,6 +180,7 @@ __meta__ = {
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
 size = Vector2( 1024, 600 )
 size_override_stretch = true
+transparent_bg = true
 handle_input_locally = false
 hdr = false
 usage = 0
@@ -154,9 +191,6 @@ script = ExtResource( 16 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Node2D" type="Node2D" parent="ViewportContainer/Viewport"]
 self_modulate = Color( 1, 1, 1, 0.67451 )
@@ -194,7 +228,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/shadow_offset_y = 2
 custom_fonts/font = ExtResource( 19 )
-text = "Paleta ng Kulay :"
+text = "Color palette:"
 align = 1
 valign = 1
 autowrap = true
@@ -206,15 +240,15 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ViewportContainer/Viewport/PanelContainer"]
-anchor_left = 0.166016
-anchor_top = 0.183333
-anchor_right = 0.908203
-anchor_bottom = 0.341667
-margin_left = -112.813
-margin_top = -31.6667
-margin_right = 53.4375
-margin_bottom = -15.8333
-rect_min_size = Vector2( 760, 95 )
+anchor_left = 0.160156
+anchor_top = 0.221667
+anchor_right = 0.913086
+anchor_bottom = 0.346667
+margin_left = -114.125
+margin_top = -27.8333
+margin_right = 54.5314
+margin_bottom = -15.3333
+rect_min_size = Vector2( 740, 75 )
 custom_constants/separation = 12
 __meta__ = {
 "_edit_lock_": true,
@@ -222,9 +256,9 @@ __meta__ = {
 }
 
 [node name="blue" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer"]
-margin_right = 95.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_right = 75.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 10 )
 texture_pressed = ExtResource( 10 )
 expand = true
@@ -234,10 +268,10 @@ __meta__ = {
 }
 
 [node name="green" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer"]
-margin_left = 107.0
-margin_right = 202.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 87.0
+margin_right = 162.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 6 )
 texture_pressed = ExtResource( 6 )
 expand = true
@@ -247,10 +281,10 @@ __meta__ = {
 }
 
 [node name="orange" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer"]
-margin_left = 214.0
-margin_right = 309.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 174.0
+margin_right = 249.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 4 )
 expand = true
@@ -260,10 +294,10 @@ __meta__ = {
 }
 
 [node name="yellow" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer"]
-margin_left = 321.0
-margin_right = 416.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 261.0
+margin_right = 336.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 7 )
 expand = true
@@ -273,10 +307,10 @@ __meta__ = {
 }
 
 [node name="red" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer"]
-margin_left = 428.0
-margin_right = 523.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 348.0
+margin_right = 423.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 5 )
 texture_pressed = ExtResource( 5 )
 expand = true
@@ -286,10 +320,10 @@ __meta__ = {
 }
 
 [node name="brown" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer"]
-margin_left = 535.0
-margin_right = 630.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 435.0
+margin_right = 510.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 8 )
 texture_pressed = ExtResource( 8 )
 expand = true
@@ -299,10 +333,10 @@ __meta__ = {
 }
 
 [node name="gray" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer"]
-margin_left = 642.0
-margin_right = 737.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 522.0
+margin_right = 597.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 15 )
 texture_pressed = ExtResource( 15 )
 expand = true
@@ -311,26 +345,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="ViewportContainer/Viewport/PanelContainer"]
-anchor_left = 0.170898
-anchor_top = 0.36
-anchor_right = 0.913086
-anchor_bottom = 0.518333
-margin_left = -111.719
-margin_top = -14.0
-margin_right = 54.5313
-margin_bottom = 1.83334
-rect_min_size = Vector2( 760, 95 )
-custom_constants/separation = 12
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="darkslateGray" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
-margin_right = 95.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="darkslateGray" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer"]
+margin_left = 609.0
+margin_right = 684.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 20 )
 texture_pressed = ExtResource( 20 )
 expand = true
@@ -339,11 +358,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="violet" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
-margin_left = 107.0
-margin_right = 202.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="violet" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer"]
+margin_left = 696.0
+margin_right = 771.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 12 )
 texture_pressed = ExtResource( 12 )
 expand = true
@@ -352,11 +371,26 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="HBoxContainer2" type="HBoxContainer" parent="ViewportContainer/Viewport/PanelContainer"]
+anchor_left = 0.163086
+anchor_top = 0.36
+anchor_right = 0.916016
+anchor_bottom = 0.485
+margin_left = -115.469
+margin_top = -14.0
+margin_right = 53.1877
+margin_bottom = -1.5
+rect_min_size = Vector2( 740, 75 )
+custom_constants/separation = 12
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="indigo" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
-margin_left = 214.0
-margin_right = 309.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_right = 75.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 2 )
 expand = true
@@ -366,10 +400,10 @@ __meta__ = {
 }
 
 [node name="black" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
-margin_left = 321.0
-margin_right = 416.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 87.0
+margin_right = 162.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 9 )
 texture_pressed = ExtResource( 9 )
 expand = true
@@ -379,10 +413,10 @@ __meta__ = {
 }
 
 [node name="peach" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
-margin_left = 428.0
-margin_right = 523.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 174.0
+margin_right = 249.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 14 )
 texture_pressed = ExtResource( 14 )
 expand = true
@@ -392,10 +426,10 @@ __meta__ = {
 }
 
 [node name="lawnGreen" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
-margin_left = 535.0
-margin_right = 630.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 261.0
+margin_right = 336.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 13 )
 texture_pressed = ExtResource( 13 )
 expand = true
@@ -405,10 +439,10 @@ __meta__ = {
 }
 
 [node name="skyBlue" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
-margin_left = 642.0
-margin_right = 737.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 348.0
+margin_right = 423.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 18 )
 texture_pressed = ExtResource( 18 )
 expand = true
@@ -417,25 +451,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="ViewportContainer/Viewport/PanelContainer"]
-anchor_left = 0.172852
-anchor_top = 0.531667
-anchor_right = 0.892578
-anchor_bottom = 0.695
-margin_left = -111.281
-margin_top = 3.16669
-margin_right = 49.9375
-margin_bottom = 16.5
-custom_constants/separation = 12
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="darkGreen" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
-margin_right = 95.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="darkGreen" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
+margin_left = 435.0
+margin_right = 510.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 23 )
 texture_pressed = ExtResource( 23 )
 expand = true
@@ -444,11 +464,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="olive" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
-margin_left = 107.0
-margin_right = 202.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="olive" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
+margin_left = 522.0
+margin_right = 597.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 22 )
 texture_pressed = ExtResource( 22 )
 expand = true
@@ -457,11 +477,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="lightPink" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
-margin_left = 214.0
-margin_right = 309.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="lightPink" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
+margin_left = 609.0
+margin_right = 684.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 21 )
 texture_pressed = ExtResource( 21 )
 expand = true
@@ -470,11 +490,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="salmon" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
-margin_left = 321.0
-margin_right = 416.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="salmon" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer2"]
+margin_left = 696.0
+margin_right = 771.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 24 )
 texture_pressed = ExtResource( 24 )
 expand = true
@@ -483,11 +503,25 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="HBoxContainer3" type="HBoxContainer" parent="ViewportContainer/Viewport/PanelContainer"]
+anchor_left = 0.163086
+anchor_top = 0.498333
+anchor_right = 0.916016
+anchor_bottom = 0.623333
+margin_left = -113.469
+margin_top = -0.166672
+margin_right = 55.1877
+margin_bottom = 12.3333
+custom_constants/separation = 12
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="teal" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
-margin_left = 428.0
-margin_right = 523.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_right = 75.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 25 )
 texture_pressed = ExtResource( 25 )
 expand = true
@@ -497,10 +531,10 @@ __meta__ = {
 }
 
 [node name="darkMagenta" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
-margin_left = 535.0
-margin_right = 630.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 87.0
+margin_right = 162.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 27 )
 texture_pressed = ExtResource( 27 )
 expand = true
@@ -510,10 +544,10 @@ __meta__ = {
 }
 
 [node name="darkGoldenrod" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
-margin_left = 642.0
-margin_right = 737.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_left = 174.0
+margin_right = 249.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 26 )
 texture_pressed = ExtResource( 26 )
 expand = true
@@ -522,25 +556,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="ViewportContainer/Viewport/PanelContainer"]
-anchor_left = 0.172852
-anchor_top = 0.705
-anchor_right = 0.898438
-anchor_bottom = 0.868333
-margin_left = -111.281
-margin_top = 20.5
-margin_right = 51.25
-margin_bottom = 33.8333
-custom_constants/separation = 13
-alignment = 1
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="cornflower" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
-margin_right = 95.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="cornflower" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
+margin_left = 261.0
+margin_right = 336.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 30 )
 texture_pressed = ExtResource( 30 )
 expand = true
@@ -549,11 +569,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="aqua" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
-margin_left = 108.0
-margin_right = 203.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="aqua" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
+margin_left = 348.0
+margin_right = 423.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 33 )
 texture_pressed = ExtResource( 33 )
 expand = true
@@ -562,11 +582,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="darkBlue" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
-margin_left = 216.0
-margin_right = 311.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="darkBlue" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
+margin_left = 435.0
+margin_right = 510.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 35 )
 texture_pressed = ExtResource( 35 )
 expand = true
@@ -575,11 +595,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="darkKhaki" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
-margin_left = 324.0
-margin_right = 419.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="darkKhaki" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
+margin_left = 522.0
+margin_right = 597.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 32 )
 texture_pressed = ExtResource( 32 )
 expand = true
@@ -588,11 +608,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="silver" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
-margin_left = 432.0
-margin_right = 527.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="silver" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
+margin_left = 609.0
+margin_right = 684.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 31 )
 texture_pressed = ExtResource( 31 )
 expand = true
@@ -601,11 +621,11 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="chocolate" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
-margin_left = 540.0
-margin_right = 635.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+[node name="chocolate" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer3"]
+margin_left = 696.0
+margin_right = 771.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 34 )
 texture_pressed = ExtResource( 34 )
 expand = true
@@ -614,11 +634,26 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="HBoxContainer4" type="HBoxContainer" parent="ViewportContainer/Viewport/PanelContainer"]
+anchor_left = 0.167969
+anchor_top = 0.641667
+anchor_right = 0.920898
+anchor_bottom = 0.766667
+margin_left = -115.375
+margin_top = 14.1667
+margin_right = 53.2814
+margin_bottom = 26.6667
+custom_constants/separation = 12
+alignment = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [node name="lightSeaGreen" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
-margin_left = 648.0
-margin_right = 743.0
-margin_bottom = 95.0
-rect_min_size = Vector2( 95, 95 )
+margin_right = 75.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
 texture_normal = ExtResource( 28 )
 texture_pressed = ExtResource( 28 )
 expand = true
@@ -627,324 +662,104 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="xButton" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer"]
-anchor_left = 0.91375
-anchor_top = 0.005
-anchor_right = 0.995
-anchor_bottom = 0.12
-texture_normal = ExtResource( 29 )
-texture_pressed = ExtResource( 29 )
-expand = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="CanvasLayer" type="CanvasLayer" parent="ViewportContainer/Viewport"]
-
-[node name="eraserBlock" type="Panel" parent="ViewportContainer/Viewport/CanvasLayer"]
-anchor_left = 0.0126953
-anchor_top = 0.218333
-anchor_right = 0.0683594
-anchor_bottom = 0.31
-mouse_filter = 2
-custom_styles/panel = SubResource( 1 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="eraser" type="TextureButton" parent="ViewportContainer/Viewport/CanvasLayer/eraserBlock"]
-anchor_left = 0.0666667
-anchor_top = 0.0535714
-anchor_right = 0.933333
-anchor_bottom = 0.946429
-rect_min_size = Vector2( 50, 50 )
-texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 3 )
+[node name="bananaYellow" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
+margin_left = 87.0
+margin_right = 162.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
+texture_normal = ExtResource( 43 )
+texture_pressed = ExtResource( 43 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="brushBlock" type="Panel" parent="ViewportContainer/Viewport/CanvasLayer"]
-anchor_left = 0.0126953
-anchor_top = 0.321667
-anchor_right = 0.0683594
-anchor_bottom = 0.413333
-mouse_filter = 2
-custom_styles/panel = SubResource( 1 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="colorButton" type="Button" parent="ViewportContainer/Viewport/CanvasLayer/brushBlock"]
-unique_name_in_owner = true
-self_modulate = Color( 1, 1, 1, 0.396078 )
-anchor_left = 0.0701754
-anchor_top = 0.0727273
-anchor_right = 0.947368
-anchor_bottom = 0.927273
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="brushTip" type="Sprite" parent="ViewportContainer/Viewport/CanvasLayer/brushBlock"]
-unique_name_in_owner = true
-position = Vector2( 29, 27 )
-scale = Vector2( 0.754237, 0.706897 )
-texture = ExtResource( 11 )
-
-[node name="disableColor" type="TextureRect" parent="ViewportContainer/Viewport/CanvasLayer/brushBlock"]
-unique_name_in_owner = true
-visible = false
-margin_left = 7.00001
-margin_top = 5.9998
-margin_right = 51.0
-margin_bottom = 48.9998
-texture = ExtResource( 29 )
-expand = true
-stretch_mode = 1
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="savedBlock" type="Panel" parent="ViewportContainer/Viewport/CanvasLayer"]
-anchor_left = 0.0126953
-anchor_top = 0.423333
-anchor_right = 0.0683594
-anchor_bottom = 0.515
-mouse_filter = 2
-custom_styles/panel = SubResource( 1 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="saveButton" type="TextureButton" parent="ViewportContainer/Viewport/CanvasLayer/savedBlock"]
-anchor_left = 0.0333333
-anchor_top = 0.0357143
-anchor_right = 0.95
-anchor_bottom = 0.964286
-texture_normal = ExtResource( 17 )
-texture_pressed = ExtResource( 17 )
+[node name="beaverBrown" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
+margin_left = 174.0
+margin_right = 249.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
+texture_normal = ExtResource( 42 )
+texture_pressed = ExtResource( 42 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="penBlock" type="Panel" parent="ViewportContainer/Viewport/CanvasLayer"]
-anchor_left = 0.0126953
-anchor_top = 0.523333
-anchor_right = 0.0683594
-anchor_bottom = 0.615
-mouse_filter = 2
-custom_styles/panel = SubResource( 1 )
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="penButton" type="Button" parent="ViewportContainer/Viewport/CanvasLayer/penBlock"]
-unique_name_in_owner = true
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.0185547
-anchor_top = 0.53
-anchor_right = 0.0634766
-anchor_bottom = 0.605
-margin_left = 4.94239
-margin_top = -25.1499
-margin_right = 48.3818
-margin_bottom = 14.7251
-rect_min_size = Vector2( 46, 44 )
-input_pass_on_modal_close_click = false
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="pen" type="TextureRect" parent="ViewportContainer/Viewport/CanvasLayer/penBlock"]
-unique_name_in_owner = true
-margin_left = 6.0
-margin_top = 4.0
-margin_right = 52.0
-margin_bottom = 48.0
-mouse_filter = 2
-texture = ExtResource( 37 )
+[node name="bitterLime" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
+margin_left = 261.0
+margin_right = 336.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
+texture_normal = ExtResource( 40 )
+texture_pressed = ExtResource( 40 )
 expand = true
-stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
 
-[node name="disableBrush" type="TextureRect" parent="ViewportContainer/Viewport/CanvasLayer/penBlock"]
-unique_name_in_owner = true
-visible = false
-margin_left = 6.0
-margin_top = 4.0
-margin_right = 52.0
-margin_bottom = 48.0
-mouse_filter = 2
-texture = ExtResource( 29 )
+[node name="boysenBerry" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
+margin_left = 348.0
+margin_right = 423.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
+texture_normal = ExtResource( 39 )
+texture_pressed = ExtResource( 39 )
 expand = true
-stretch_mode = 1
-
-[node name="BrushSize" type="Panel" parent="ViewportContainer/Viewport"]
-unique_name_in_owner = true
-visible = false
-anchor_left = 0.194336
-anchor_top = 0.296667
-anchor_right = 0.664063
-anchor_bottom = 0.686667
-custom_styles/panel = SubResource( 6 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="thickLabel" type="Label" parent="ViewportContainer/Viewport/BrushSize"]
-anchor_left = 0.292969
-anchor_top = 0.31
-anchor_right = 0.587891
-anchor_bottom = 0.395
-margin_left = -57.918
-margin_top = -44.54
-margin_right = 102.225
-margin_bottom = -12.43
-rect_min_size = Vector2( 302, 52 )
-custom_fonts/font = SubResource( 10 )
-text = "Laki ng brush"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
+[node name="deepSaffron" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
+margin_left = 435.0
+margin_right = 510.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
+texture_normal = ExtResource( 41 )
+texture_pressed = ExtResource( 41 )
+expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="HSlider" type="HSlider" parent="ViewportContainer/Viewport/BrushSize"]
-unique_name_in_owner = true
-anchor_left = 0.209961
-anchor_top = 0.378333
-anchor_right = 0.55957
-anchor_bottom = 0.473333
-margin_left = -84.9912
-margin_top = -18.53
-margin_right = 104.847
-margin_bottom = 9.23997
-rect_min_size = Vector2( 358, 50 )
-custom_icons/grabber_highlight = ExtResource( 38 )
-custom_icons/grabber = ExtResource( 38 )
-custom_styles/slider = SubResource( 9 )
-min_value = 1.0
-max_value = 50.0
-value = 1.0
+[node name="heliotrope" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
+margin_left = 522.0
+margin_right = 597.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
+texture_normal = ExtResource( 46 )
+texture_pressed = ExtResource( 46 )
+expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="brushSize" type="Label" parent="ViewportContainer/Viewport/BrushSize"]
-unique_name_in_owner = true
-anchor_left = 0.567383
-anchor_top = 0.373333
-anchor_right = 0.639648
-anchor_bottom = 0.478333
-margin_left = 107.089
-margin_top = -27.36
-margin_right = 146.329
-margin_bottom = 11.07
-rect_min_size = Vector2( 74, 63 )
-custom_fonts/font = SubResource( 11 )
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
+[node name="malachite" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
+margin_left = 609.0
+margin_right = 684.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
+texture_normal = ExtResource( 45 )
+texture_pressed = ExtResource( 45 )
+expand = true
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": true
 }
 
-[node name="smoothLabel" type="Label" parent="ViewportContainer/Viewport/BrushSize"]
-anchor_left = 0.307617
-anchor_top = 0.455
-anchor_right = 0.5625
-anchor_bottom = 0.52
-margin_left = -52.9639
-margin_top = 11.53
-margin_right = 126.438
-margin_bottom = 48.32
-rect_min_size = Vector2( 302, 52 )
-custom_fonts/font = SubResource( 12 )
-text = "kinis ng brush"
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="HSlider2" type="HSlider" parent="ViewportContainer/Viewport/BrushSize"]
-unique_name_in_owner = true
-anchor_left = 0.209961
-anchor_top = 0.536667
-anchor_right = 0.55957
-anchor_bottom = 0.62
-margin_left = -84.9912
-margin_top = 34.42
-margin_right = 104.847
-margin_bottom = 64.92
-rect_min_size = Vector2( 358, 50 )
-custom_icons/grabber_highlight = ExtResource( 38 )
-custom_icons/grabber = ExtResource( 38 )
-custom_styles/slider = SubResource( 9 )
-min_value = 1.0
-max_value = 80.0
-value = 1.0
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="brushSmooth" type="Label" parent="ViewportContainer/Viewport/BrushSize"]
-unique_name_in_owner = true
-anchor_left = 0.567383
-anchor_top = 0.518333
-anchor_right = 0.639648
-anchor_bottom = 0.623333
-margin_left = 109.089
-margin_top = 28.71
-margin_right = 148.329
-margin_bottom = 67.14
-rect_min_size = Vector2( 74, 63 )
-custom_fonts/font = SubResource( 11 )
-align = 1
-valign = 1
-autowrap = true
-clip_text = true
-uppercase = true
-__meta__ = {
-"_edit_lock_": true,
-"_edit_use_anchors_": true
-}
-
-[node name="exitXButton" type="TextureButton" parent="ViewportContainer/Viewport/BrushSize"]
-anchor_left = 0.613281
-anchor_top = 0.31
-anchor_right = 0.652344
-anchor_bottom = 0.376667
-margin_left = 134.012
-margin_top = -64.54
-margin_right = 155.223
-margin_bottom = -40.14
-rect_min_size = Vector2( 40, 40 )
-texture_normal = ExtResource( 29 )
-texture_pressed = ExtResource( 29 )
+[node name="sage" type="TextureButton" parent="ViewportContainer/Viewport/PanelContainer/HBoxContainer4"]
+margin_left = 696.0
+margin_right = 771.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 75, 75 )
+texture_normal = ExtResource( 44 )
+texture_pressed = ExtResource( 44 )
 expand = true
 __meta__ = {
 "_edit_lock_": true,
@@ -1009,6 +824,475 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="BrushSize" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.113281
+anchor_top = 0.313333
+anchor_right = 0.679688
+anchor_bottom = 0.885
+custom_styles/panel = SubResource( 6 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="brushLabel" type="Label" parent="BrushSize"]
+unique_name_in_owner = true
+anchor_left = 0.0396552
+anchor_top = 0.0670554
+anchor_right = 0.822414
+anchor_bottom = 0.169096
+custom_fonts/font = SubResource( 10 )
+text = "Brush Size: "
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="brush" type="HSlider" parent="BrushSize"]
+unique_name_in_owner = true
+anchor_left = 0.0396552
+anchor_top = 0.163265
+anchor_right = 0.951724
+anchor_bottom = 0.311953
+margin_bottom = -3.8147e-05
+rect_min_size = Vector2( 358, 50 )
+custom_icons/grabber_highlight = ExtResource( 38 )
+custom_icons/grabber = ExtResource( 38 )
+custom_styles/slider = SubResource( 9 )
+min_value = 1.0
+value = 1.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="eraserSize" type="Label" parent="BrushSize"]
+unique_name_in_owner = true
+anchor_left = 0.0413793
+anchor_top = 0.335277
+anchor_right = 0.946552
+anchor_bottom = 0.454811
+custom_fonts/font = SubResource( 10 )
+text = "Eraser Size: "
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="eraser" type="HSlider" parent="BrushSize"]
+unique_name_in_owner = true
+anchor_left = 0.0448276
+anchor_top = 0.434402
+anchor_right = 0.956897
+anchor_bottom = 0.58309
+margin_bottom = -3.8147e-05
+rect_min_size = Vector2( 358, 50 )
+custom_icons/grabber_highlight = SubResource( 12 )
+custom_icons/grabber = SubResource( 13 )
+custom_styles/slider = SubResource( 14 )
+min_value = 1.0
+value = 1.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="exit" type="Button" parent="BrushSize"]
+anchor_left = 0.396552
+anchor_top = 0.836735
+anchor_right = 0.656897
+anchor_bottom = 0.96793
+focus_mode = 0
+custom_fonts/font = SubResource( 11 )
+text = "Close"
+flat = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="eraserBlock" type="Panel" parent="CanvasLayer"]
+anchor_left = 0.0126953
+anchor_top = 0.218333
+anchor_right = 0.0683594
+anchor_bottom = 0.31
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="eraser" type="TextureButton" parent="CanvasLayer/eraserBlock"]
+anchor_left = 0.0666667
+anchor_top = 0.0535714
+anchor_right = 0.933333
+anchor_bottom = 0.946429
+rect_min_size = Vector2( 50, 50 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="disableEraser" type="TextureRect" parent="CanvasLayer/eraserBlock"]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.105263
+anchor_top = 0.072727
+anchor_right = 0.91228
+anchor_bottom = 0.872724
+mouse_filter = 2
+texture = ExtResource( 29 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="brushBlock" type="Panel" parent="CanvasLayer"]
+anchor_left = 0.0126953
+anchor_top = 0.321667
+anchor_right = 0.0683594
+anchor_bottom = 0.413333
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="colorButton" type="Button" parent="CanvasLayer/brushBlock"]
+unique_name_in_owner = true
+self_modulate = Color( 1, 1, 1, 0.396078 )
+anchor_left = 0.0701754
+anchor_top = 0.0727273
+anchor_right = 0.947368
+anchor_bottom = 0.927273
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="brushTip" type="Sprite" parent="CanvasLayer/brushBlock"]
+unique_name_in_owner = true
+position = Vector2( 29, 27 )
+scale = Vector2( 0.754237, 0.706897 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="disableColor" type="TextureRect" parent="CanvasLayer/brushBlock"]
+unique_name_in_owner = true
+visible = false
+margin_left = 7.00001
+margin_top = 5.9998
+margin_right = 51.0
+margin_bottom = 48.9998
+texture = ExtResource( 29 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="penBlock" type="Panel" parent="CanvasLayer"]
+anchor_left = 0.0126953
+anchor_top = 0.523333
+anchor_right = 0.0683594
+anchor_bottom = 0.615
+margin_left = 1.23978e-05
+margin_top = -59.9998
+margin_bottom = -59.9998
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="penButton" type="Button" parent="CanvasLayer/penBlock"]
+unique_name_in_owner = true
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0185547
+anchor_top = 0.53
+anchor_right = 0.0634766
+anchor_bottom = 0.605
+margin_left = 4.94239
+margin_top = -25.1499
+margin_right = 48.3818
+margin_bottom = 14.7251
+rect_min_size = Vector2( 46, 44 )
+input_pass_on_modal_close_click = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="pen" type="TextureRect" parent="CanvasLayer/penBlock"]
+unique_name_in_owner = true
+anchor_left = 0.105263
+anchor_top = 0.0727271
+anchor_right = 0.91228
+anchor_bottom = 0.872725
+mouse_filter = 2
+texture = ExtResource( 37 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="disableBrush" type="TextureRect" parent="CanvasLayer/penBlock"]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.105263
+anchor_top = 0.0727271
+anchor_right = 0.91228
+anchor_bottom = 0.872725
+mouse_filter = 2
+texture = ExtResource( 29 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="textBlock" type="Panel" parent="CanvasLayer"]
+anchor_left = 0.0126953
+anchor_top = 0.523333
+anchor_right = 0.0683594
+anchor_bottom = 0.615
+margin_left = 1.23978e-05
+margin_top = 0.000183105
+margin_bottom = 0.000183105
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="textButton" type="Button" parent="CanvasLayer/textBlock"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0185547
+anchor_top = 0.53
+anchor_right = 0.0634766
+anchor_bottom = 0.605
+margin_left = 4.94239
+margin_top = -25.1499
+margin_right = 48.3818
+margin_bottom = 14.7251
+rect_min_size = Vector2( 46, 44 )
+input_pass_on_modal_close_click = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="text" type="TextureRect" parent="CanvasLayer/textBlock"]
+unique_name_in_owner = true
+anchor_left = 0.105263
+anchor_top = 0.072727
+anchor_right = 0.91228
+anchor_bottom = 0.872724
+mouse_filter = 2
+texture = ExtResource( 47 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="disableText" type="TextureRect" parent="CanvasLayer/textBlock"]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.105263
+anchor_top = 0.072727
+anchor_right = 0.91228
+anchor_bottom = 0.872724
+mouse_filter = 2
+texture = ExtResource( 29 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="savedBlock" type="Panel" parent="CanvasLayer"]
+anchor_left = 0.0126953
+anchor_top = 0.423333
+anchor_right = 0.0683594
+anchor_bottom = 0.515
+margin_left = 1.23978e-05
+margin_top = 121.0
+margin_bottom = 121.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="saveButton" type="TextureButton" parent="CanvasLayer/savedBlock"]
+anchor_left = 0.0333333
+anchor_top = 0.0357143
+anchor_right = 0.95
+anchor_bottom = 0.964286
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 17 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="exitBlock" type="Panel" parent="CanvasLayer"]
+anchor_left = 0.0126953
+anchor_top = 0.725
+anchor_right = 0.0683594
+anchor_bottom = 0.816667
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="exitBlock" type="TextureButton" parent="CanvasLayer/exitBlock"]
+anchor_left = 0.0877193
+anchor_top = 0.109091
+anchor_right = 0.91228
+anchor_bottom = 0.909088
+texture_normal = ExtResource( 29 )
+texture_pressed = ExtResource( 29 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="TextPanel" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+anchor_left = 0.0859375
+anchor_top = 0.643333
+anchor_right = 0.415039
+anchor_bottom = 0.98
+custom_styles/panel = SubResource( 6 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="normalText" type="Panel" parent="TextPanel"]
+anchor_left = 0.0356083
+anchor_top = 0.0940594
+anchor_right = 0.21365
+anchor_bottom = 0.386139
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="boldText" type="Panel" parent="TextPanel"]
+anchor_left = 0.249258
+anchor_top = 0.0940594
+anchor_right = 0.4273
+anchor_bottom = 0.386139
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="italicText" type="Panel" parent="TextPanel"]
+anchor_left = 0.47181
+anchor_top = 0.0990099
+anchor_right = 0.649852
+anchor_bottom = 0.391089
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="exitText" type="Button" parent="TextPanel"]
+anchor_left = 0.198813
+anchor_top = 0.747525
+anchor_right = 0.74184
+anchor_bottom = 0.960396
+margin_left = 1.52588e-05
+margin_right = 3.05176e-05
+custom_fonts/font = SubResource( 11 )
+text = "Close"
+flat = true
+clip_text = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="Tools" type="Button" parent="."]
+unique_name_in_owner = true
+anchor_left = 0.00878906
+anchor_top = 0.438333
+anchor_right = 0.106445
+anchor_bottom = 0.6
+flat = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Tools"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 38 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="tools" type="Label" parent="Tools"]
+anchor_left = 0.04
+anchor_top = 0.340206
+anchor_right = 0.95
+anchor_bottom = 0.721649
+custom_fonts/font = SubResource( 15 )
+text = "Tools"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/blue" to="ViewportContainer/Viewport/Node2D" method="_on_blue_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/green" to="ViewportContainer/Viewport/Node2D" method="_on_green_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/orange" to="ViewportContainer/Viewport/Node2D" method="_on_orange_pressed"]
@@ -1016,32 +1300,43 @@ __meta__ = {
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/red" to="ViewportContainer/Viewport/Node2D" method="_on_red_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/brown" to="ViewportContainer/Viewport/Node2D" method="_on_brown_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/gray" to="ViewportContainer/Viewport/Node2D" method="_on_gray_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/darkslateGray" to="ViewportContainer/Viewport/Node2D" method="_on_darkslateGray_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/violet" to="ViewportContainer/Viewport/Node2D" method="_on_violet_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/darkslateGray" to="ViewportContainer/Viewport/Node2D" method="_on_darkslateGray_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer/violet" to="ViewportContainer/Viewport/Node2D" method="_on_violet_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/indigo" to="ViewportContainer/Viewport/Node2D" method="_on_indigo_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/black" to="ViewportContainer/Viewport/Node2D" method="_on_black_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/peach" to="ViewportContainer/Viewport/Node2D" method="_on_peach_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/lawnGreen" to="ViewportContainer/Viewport/Node2D" method="_on_lawnGreen_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/skyBlue" to="ViewportContainer/Viewport/Node2D" method="_on_skyBlue_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/darkGreen" to="ViewportContainer/Viewport/Node2D" method="_on_darkGreen_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/olive" to="ViewportContainer/Viewport/Node2D" method="_on_olive_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/lightPink" to="ViewportContainer/Viewport/Node2D" method="_on_lightPink_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/salmon" to="ViewportContainer/Viewport/Node2D" method="_on_salmon_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/darkGreen" to="ViewportContainer/Viewport/Node2D" method="_on_darkGreen_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/olive" to="ViewportContainer/Viewport/Node2D" method="_on_olive_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/lightPink" to="ViewportContainer/Viewport/Node2D" method="_on_lightPink_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer2/salmon" to="ViewportContainer/Viewport/Node2D" method="_on_salmon_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/teal" to="ViewportContainer/Viewport/Node2D" method="_on_teal_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/darkMagenta" to="ViewportContainer/Viewport/Node2D" method="_on_darkMagenta_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/darkGoldenrod" to="ViewportContainer/Viewport/Node2D" method="_on_darkGoldenrod_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/cornflower" to="ViewportContainer/Viewport/Node2D" method="_on_cornflower_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/aqua" to="ViewportContainer/Viewport/Node2D" method="_on_aqua_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/darkBlue" to="ViewportContainer/Viewport/Node2D" method="_on_darkBlue_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/darkKhaki" to="ViewportContainer/Viewport/Node2D" method="_on_darkKhaki_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/silver" to="ViewportContainer/Viewport/Node2D" method="_on_silver_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/chocolate" to="ViewportContainer/Viewport/Node2D" method="_on_chocolate_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/cornflower" to="ViewportContainer/Viewport/Node2D" method="_on_cornflower_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/aqua" to="ViewportContainer/Viewport/Node2D" method="_on_aqua_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/darkBlue" to="ViewportContainer/Viewport/Node2D" method="_on_darkBlue_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/darkKhaki" to="ViewportContainer/Viewport/Node2D" method="_on_darkKhaki_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/silver" to="ViewportContainer/Viewport/Node2D" method="_on_silver_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer3/chocolate" to="ViewportContainer/Viewport/Node2D" method="_on_chocolate_pressed"]
 [connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/lightSeaGreen" to="ViewportContainer/Viewport/Node2D" method="_on_lightSeaGreen_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/xButton" to="ViewportContainer/Viewport/Node2D" method="_on_xButton_pressed"]
-[connection signal="button_down" from="ViewportContainer/Viewport/CanvasLayer/eraserBlock/eraser" to="ViewportContainer/Viewport/Node2D" method="_on_eraser_button_down"]
-[connection signal="pressed" from="ViewportContainer/Viewport/CanvasLayer/brushBlock/colorButton" to="ViewportContainer/Viewport/Node2D" method="_on_colorButton_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/CanvasLayer/savedBlock/saveButton" to="ViewportContainer/Viewport" method="_on_saveButton_pressed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/CanvasLayer/penBlock/penButton" to="ViewportContainer/Viewport/Node2D" method="_on_penButton_pressed"]
-[connection signal="value_changed" from="ViewportContainer/Viewport/BrushSize/HSlider" to="ViewportContainer/Viewport/Node2D" method="_on_HSlider_value_changed"]
-[connection signal="value_changed" from="ViewportContainer/Viewport/BrushSize/HSlider2" to="ViewportContainer/Viewport/Node2D" method="_on_HSlider2_value_changed"]
-[connection signal="pressed" from="ViewportContainer/Viewport/BrushSize/exitXButton" to="ViewportContainer/Viewport/Node2D" method="_on_exitXButton_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/bananaYellow" to="ViewportContainer/Viewport/Node2D" method="_on_bananaYellow_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/beaverBrown" to="ViewportContainer/Viewport/Node2D" method="_on_beaverBrown_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/bitterLime" to="ViewportContainer/Viewport/Node2D" method="_on_bitterLime_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/boysenBerry" to="ViewportContainer/Viewport" method="_on_boysenBerry_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/deepSaffron" to="ViewportContainer/Viewport/Node2D" method="_on_deepSaffron_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/heliotrope" to="ViewportContainer/Viewport/Node2D" method="_on_heliotrope_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/malachite" to="ViewportContainer/Viewport/Node2D" method="_on_malachite_pressed"]
+[connection signal="pressed" from="ViewportContainer/Viewport/PanelContainer/HBoxContainer4/sage" to="ViewportContainer/Viewport/Node2D" method="_on_sage_pressed"]
+[connection signal="value_changed" from="BrushSize/brush" to="ViewportContainer/Viewport/Node2D" method="_on_HSlider_value_changed"]
+[connection signal="value_changed" from="BrushSize/eraser" to="ViewportContainer/Viewport/Node2D" method="_on_eraser_value_changed"]
+[connection signal="pressed" from="BrushSize/exit" to="ViewportContainer/Viewport/Node2D" method="_on_exit_pressed"]
+[connection signal="button_down" from="CanvasLayer/eraserBlock/eraser" to="ViewportContainer/Viewport/Node2D" method="_on_eraser_button_down"]
+[connection signal="pressed" from="CanvasLayer/brushBlock/colorButton" to="ViewportContainer/Viewport/Node2D" method="_on_colorButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/penBlock/penButton" to="ViewportContainer/Viewport/Node2D" method="_on_penButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/textBlock/textButton" to="ViewportContainer/Viewport/Node2D" method="_on_textButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/savedBlock/saveButton" to="ViewportContainer/Viewport" method="_on_saveButton_pressed"]
+[connection signal="pressed" from="CanvasLayer/exitBlock/exitBlock" to="ViewportContainer/Viewport/Node2D" method="_on_exitBlock_pressed"]
+[connection signal="pressed" from="TextPanel/exitText" to="ViewportContainer/Viewport/Node2D" method="_on_exitText_pressed"]
+[connection signal="pressed" from="Tools" to="ViewportContainer/Viewport/Node2D" method="_on_Tools_pressed"]
