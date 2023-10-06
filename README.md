@@ -8,8 +8,9 @@
 The following are its functions:
 - [x] Change brush color
 - [x] Change brush size
-- [x] Change brush smoothness (does not always works)
 - [x] Adds an Eraser
+- [x] Adds More Color
+- [x] Change Eraser Size
 - [x] Save the File into the computer's Picture folder
 
 
