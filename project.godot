@@ -10,13 +10,19 @@ config_version=4
 
 [application]
 
-config/name="Paint"
+config/name="Crude Paint"
+config/description="Crdue Paint made in Godot Engine (incomplete & imperfect)"
 run/main_scene="res://MainMenu.tscn"
 config/icon="res://icon.png"
+config/windows_native_icon="res://paint.ico"
 
 [display]
 
 window/stretch/mode="2d"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/godot_icon/plugin.cfg" )
 
 [gui]
 
